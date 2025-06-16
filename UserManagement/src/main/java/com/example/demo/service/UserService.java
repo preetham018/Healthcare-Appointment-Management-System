@@ -4,12 +4,13 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.example.demo.dto.UserRequest;
+import com.example.demo.dto.UserUpdateDto;
 import com.example.demo.entity.*;
 import com.example.demo.repository.DoctorRepository;
 import com.example.demo.repository.PatientRepository;
 import com.example.demo.repository.UserRepository;
-import com.example.demo.dto.UserRequest;
-import com.example.demo.dto.UserUpdateDto;
 
 @Service
 public class UserService {

@@ -8,8 +8,9 @@ import lombok.Data;
 @Table(name = "patients")
 public class Patient {
 
-    @Id
+	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "patient_id")  // Explicitly mapped column name
     private Long patientId;
 
     @OneToOne
